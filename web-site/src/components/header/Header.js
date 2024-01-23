@@ -4,13 +4,7 @@ import classes from './header.module.scss'
 // import img
 
 import logo from '../../assets/icon/logo.png'
-// import graphElem from '../../assets/img/Graphic_Elements.png'
 import bigLogo from '../../assets/img/big_logo.png'
-
-    // import mobile img
-    import mobileLogo from '../../assets/mobile_img/img/mobile_logo.png'
-    import mobileBigLogo from '../../assets/mobile_img/img/big_mobile_logo.png'
-    // import mobile img
 
 // import img
 
@@ -48,9 +42,6 @@ export default function Header(){
                                     довольных клиентов
                                 </p>
                             </div>
-                            {/* <div className={classes.statisticsText}>
-
-                            </div> */}
                         </div>
                     </div>
                     <div className={classes.lowerRightContent}>

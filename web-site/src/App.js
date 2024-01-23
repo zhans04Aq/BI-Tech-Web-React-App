@@ -4,7 +4,7 @@ import './App.css';
 // import components
 
 import Header from './components/header/Header'
-// import Form from './components/form/Form'
+import Form from './components/form/Form'
 // import Services from './components/services/Services';
 // import Portfolio from './components/portfolio/Portfolio';
 // import Team from './components/team/Team';
@@ -17,7 +17,7 @@ function App() {
     <div className="App">
       <div className='Container'>
         <Header/>
-        {/* <Form/> */}
+        <Form/>
         {/* <Services/> */}
         {/* <Portfolio/> */}
         {/* <Team/> */}
