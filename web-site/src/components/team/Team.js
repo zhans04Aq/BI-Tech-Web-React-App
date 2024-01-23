@@ -15,62 +15,22 @@ import graphEl from '../../assets/img/Graphic_Elements5.png'
 const Team = () =>{
     return(
         <div className={styles.team}>
-            <div className={styles.teamTitle}>
-                <img src={miniLogo} alt="mini logo" />
+            <div className={styles.componentTitle}>
+                <img src={miniLogo} alt="logo" />
                 <p>совокупный состав</p>
                 <div>
-                    <p>Наша команда</p>   
+                    <h1>Наша команда</h1>
                     <img src={arrowDown} alt="arrow down" />
-                </div>
-            </div>
-            <div className={styles.mobileTeamContainer}>
-                <div className={styles.leftContent}>
-                    <div className={styles.contentBg}>
-                        <p>
-                        Мы команда целеустремленных веб-разработчиков, создавая инновационные и высокопроизводительные веб-приложения. Наш коллектив объединяет опыт и страсть к технологиям, чтобы предоставлять клиентам уникальные и эффективные решения.
-                        </p>
-                        <img src={graphEl} alt="" />
-                    </div>
-                </div>
-                <div className={styles.teamMemberContainer}>
-                    <div className={styles.memberCard}>
-                        <img src={bekrosImg} alt="" />
-                        <div>
-                            <h4>Бекарыс Ибрашев</h4>
-                            <p>Back-end Developer</p>
-                        </div>
-                    </div>
-                    <div className={styles.memberCard}>
-                        <img src={sultanImg} alt="" />
-                        <div>
-                            <h4>Мечеев Султан</h4>
-                            <p>Web - designer / UI & UX Designer</p>
-                        </div>
-                    </div>
-                    <div className={styles.memberCard}>
-                        <img src={placeholderImg} alt="" />
-                        <div>
-                            <h4>Базаров Жансерик</h4>
-                            <p>Front-end Developer</p>
-                        </div>
-                    </div>
-                    <div className={styles.memberCard}>
-                        <img src={placeholderImg} alt="" />
-                        <div>
-                            <h4>Адильбек Кудайбергенов</h4>
-                            <p>Marketing Specialist</p>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div className={styles.teamContainer}>
                 <div className={styles.leftContent}>
-                    <div className={styles.contentBg}>
-                        <p>
-                        Мы команда целеустремленных веб-разработчиков, создавая инновационные и высокопроизводительные веб-приложения. Наш коллектив объединяет опыт и страсть к технологиям, чтобы предоставлять клиентам уникальные и эффективные решения.
-                        </p>
-                        <img src={graphEl} alt="" />
-                    </div>
+                    <p>
+                    Мы команда <br /> целеустремленных веб-разработчиков, создавая инновационные и высокопроизводитель <br />ные веб-приложения. <br /> Наш коллектив <br />
+                    объединяет опыт и <br />
+                     страсть к технологиям, чтобы предоставлять клиентам уникальные и эффективные решения.
+                    </p>
+                    <img src={graphEl} alt="" />
                 </div>
                 <div className={styles.teamMembersContainer}>
                     <div className={styles.memberCard}>

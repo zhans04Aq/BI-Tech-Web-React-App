@@ -8,14 +8,22 @@
         width: 100%;
         height: 100%;
 
-        .headerUpperContainer{
-            width: 100%;
-            height: 100%;
-            // display: flex;
-            // justify-content: space-between;
+        .headerUpperContent{
+            width: 80%;
+            height: 80%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
             .logo{
-                width: 100%;
-                height: 100%;
+                width: 35%;
+                height: 20% ;
+            }
+
+            .graphElement{
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 55%;
             }
         }
         .headerLowerContainer{

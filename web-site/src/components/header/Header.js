@@ -5,7 +5,7 @@ import classes from './header.module.scss'
 
 import logo from '../../assets/icon/logo.png'
 import bigLogo from '../../assets/img/big_logo.png'
-
+import graphElement from '../../assets/img/Graphic_Elements.png'
 // import img
 
 export default function Header(){
@@ -14,6 +14,7 @@ export default function Header(){
             <div className={classes.headerContainer}>
                 <div className={classes.headerUpperContent}>
                     <img alt='logo' className={classes.logo} src={logo}/>
+                    <img src={graphElement} alt="" className={classes.graphElement}/>
                 </div>
                 <div className={classes.headerLowerContainer}>
                     <div className={classes.lowerLeftContent}>
