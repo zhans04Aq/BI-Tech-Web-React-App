@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "sass": "^1.69.7",
+    "sass-loader": "^13.3.3",
+    "webpack": "^5.89.0"
+  },
+  "dependencies": {
+    "react-dom": "^18.2.0"
+  }
+}

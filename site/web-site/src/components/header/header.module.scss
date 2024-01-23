@@ -1,0 +1,221 @@
+.header{
+    width: 100%;
+    height: 100%;
+    .mobileHeaderContainer{
+        display: none;
+    }
+
+    .headerContainer{
+        width: 100%;
+        height: 100%;
+
+        .headerUpperContainer{
+            width: 100%;
+            height: 100%;
+            // display: flex;
+            // justify-content: space-between;
+            .logo{
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+
+        .headerLowerContainer{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            .lowerLeftContent{
+                width: 60%;
+                p{
+                    width: 100%;
+                    text-align: start;
+                    color: white;
+                    // font-size: 50px;
+                    font-size: calc(20px + 30 * (100vw / 1920));
+                    letter-spacing: 2px;
+                    span{
+                        color:#898989;
+                    }
+                }
+
+                .statisticsContainer{
+                    width: 100%;
+                    background-image: url('../../assets/img/statistics_bg.png');
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                    display: flex;  
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 auto;
+                        div{
+                            width: 30%;
+                            p{
+                                text-align: start;
+                                // font-size: 20px;
+                                font-size: calc(10px + 10 * (100vw / 1920));
+                                color: #494949;
+                                span{
+                                    // font-size: 45px;
+                                    font-size: calc(20px + 25 * (100vw / 1920));
+                                    color: white;
+                                }
+                            }
+                        }
+
+                        
+                        div:nth-of-type(3){
+                            width: 33%;
+                        }
+                        div:first-child{
+                            width: 25%;
+                        }
+                    // .statisticsText{
+                        
+                    // }
+                }
+            }
+
+            .lowerRightContent{
+                width: 40%;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .bigLogo{
+                    width: 100%;
+                }
+
+                .scrollDownNote{
+                    right: 0;
+                    rotate:270deg;
+                    width: 100%;
+                    height: 100%;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around ;
+                    .hrLine{
+                        width: 30%;
+                        height: 2px;
+                        background-color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1440px) {
+    .header{
+        .headerContainer{
+            .headerLowerContainer{
+                .lowerLeftContent{
+                    p{
+                        font-size: calc(20px + (30 + 30 * 0.7) * ((100vw - 430px) / 1920));
+                    }
+                    .statisticsContainer{
+                        justify-content: space-around;
+                            
+                            div{
+                                width: 25%;
+                                p{
+                                    font-size: calc(10px + (10 + 10 * 0.7) * ((100vw - 430px) / 1920));
+                                    span{
+                                        font-size: calc(20px + (25 + 25 * 0.7) * ((100vw - 430px) / 1920));
+                                    }
+                                }
+
+                            
+                            }
+                            div:nth-of-type(3){
+                                width: 30%;
+                            }
+                            div:first-child{
+                                width: 15%;
+                            }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .header{
+        .headerContainer{
+            .headerLowerContainer{
+                .lowerLeftContent{
+                    .statisticsContainer{
+                        justify-content: space-around;
+                            
+                            div{
+                                width: 27%;                         
+                            }
+                            div:nth-of-type(3){
+                                width: 32%;
+                            }
+                            div:first-child{
+                                width: 15%;
+                            }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// @media screen and (max-width:480px) {
+//     .header{
+//         .headerContainer{
+//             display: none;
+//         }
+
+//         .mobileHeaderContainer{
+//             padding: 5%;
+//             box-sizing: border-box;
+//             display: block;
+//             width: 100%;
+//             height: 100%;
+//             display: flex;
+//             flex-direction: column;
+//             align-items: center ;
+
+//             p{
+//                 width: 342px;
+//                 color: white;
+//                 font-size: 20px;
+//                 letter-spacing: 6px;
+//                 span{
+//                     color: #898989;
+//                 }
+//             }
+
+//             .mobileStatistics{
+//                 background-image: url('../../assets/mobile_img/img/mobile_statistics_bg.png');
+//                 background-repeat: no-repeat;
+//                 background-size: cover;
+//                 width: 356px;
+//                 height: 69px;
+//                 .statisticsContent{
+//                     width: 80%;
+//                     height: 100%;
+//                     display: flex;
+//                     justify-content: space-between;
+//                     align-items: center;
+//                     margin: 0 auto;
+//                         p{
+//                             width: 33%;
+//                             letter-spacing: 0px;
+//                             font-size: 20px;
+//                             color: white;
+//                             span{
+//                                 font-size: 10px;
+//                                 color: #898989;
+//                             }
+//                         }
+//                 }
+//             }
+//         }
+//     }
+// }
