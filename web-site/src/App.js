@@ -8,7 +8,7 @@ import Form from './components/form/Form'
 import Services from './components/services/Services';
 import Portfolio from './components/portfolio/Portfolio';
 import Team from './components/team/Team';
-// import Review from './components/reviews/Review';
+import Review from './components/reviews/Review';
 // import Footer  from './components/footer/Footer';
 
 // import components
@@ -21,7 +21,7 @@ function App() {
         <Services/>
         <Portfolio/>
         <Team/>
-        {/* <Review/> */}
+        <Review/>
         {/* <Footer/> */}
       </div>
     </div>
