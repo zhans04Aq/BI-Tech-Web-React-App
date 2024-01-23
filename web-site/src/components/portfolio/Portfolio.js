@@ -15,44 +15,22 @@ import mobileportfolioExample from '../../assets/mobile_img/img/App_Showcase.png
 export default function Portfolio(){
     return(
         <div className={classes.portfolio}>
-            <div className={classes.mobilePortfolioContainer}>
-                <div className={classes.portfolioTitle}>
-                    <img src={miniLogo} alt="logo" />
-                    <p>убедитесь в нас</p>
-                    <div>
-                        <p>Наши работы</p>
-                        <img src={arrowDown} alt="arrow down" />
-                    </div>
-                </div>
-                <div className={classes.portfolioSlider}>
-                    <div className={classes.mobileSliderBg}>
-                        <img src={mobileportfolioExample} alt="" />
-                    </div>
-                    <div className={classes.sliderArrows}>
-                        <img src={arrowLeft} alt="" />
-                        <img src={arrowRight} alt="" />
-                    </div>
+            <div className={classes.componentTitle}>
+                <img src={miniLogo} alt="logo" />
+                <p>убедитесь в нас</p>
+                <div>
+                    <h1>Наши Работы</h1>
+                    <img src={arrowDown} alt="arrow down" />
                 </div>
             </div>
             <div className={classes.portfolioContainer}>
-                <div className={classes.portfolioTitle}>
-                    <img src={miniLogo} alt="logo" />
-                    <p>убедитесь в нас</p>
-                    <div>
-                        <p>Наши работы</p>
-                        <img src={arrowDown} alt="arrow down" />
-                    </div>
-                </div>
-                <div className={classes.portfolioSlider}>
                     <div className={classes.sliderBg}>
                         <img src={portfolioExample} alt="" className={classes.sliderShowcase}/>
                     </div>
-                    
                     <div className={classes.sliderArrows}>
                         <img src={arrowLeft} alt="" className={classes.arrows}/>
                         <img src={arrowRight} alt="" className={classes.arrows}/>
                     </div>
-                </div>
             </div>
         </div>
     )
