@@ -17,7 +17,7 @@ const Team = () =>{
         <div className={styles.team}>
             <div className={styles.componentTitle}>
                 <img src={miniLogo} alt="logo" />
-                <p>совокупный состав</p>
+                <p>СОВОКУПНЫЙ СОСТАВ</p>
                 <div>
                     <h1>Наша команда</h1>
                     <img src={arrowDown} alt="arrow down" />

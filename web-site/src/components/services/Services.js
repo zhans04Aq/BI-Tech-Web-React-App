@@ -17,7 +17,7 @@ const Services = () =>{
         <div className={classes.services}>
             <div className={classes.componentTitle}>
                 <img src={miniLogo} alt="logo" />
-                <p>что мы делаем?</p>
+                <p>ЧТО МЫ СОЗДАЕМ?</p>
                 <div>
                     <h1>Наши Услуги</h1>
                     <img src={arrowDown} alt="arrow down" />

@@ -17,7 +17,7 @@ export default function Portfolio(){
         <div className={classes.portfolio}>
             <div className={classes.componentTitle}>
                 <img src={miniLogo} alt="logo" />
-                <p>убедитесь в нас</p>
+                <p>ПОРТФОЛИО</p>
                 <div>
                     <h1>Наши Работы</h1>
                     <img src={arrowDown} alt="arrow down" />

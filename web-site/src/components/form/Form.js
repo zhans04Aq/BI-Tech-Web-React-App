@@ -1,9 +1,21 @@
 import React from 'react'
 import classes from './form.module.scss'
-
+import { useState } from 'react'
 
 
 export default function Form(){
+
+    const [name, setName] = useState('')
+    const changeName = (event) => {
+        setName(event.target.value)
+    }
+
+    console.log(name)
+    const [number, setNumber] = useState('')
+    const [email, setEmail] = useState('')
+    const [message, setMessage] = useState('')
+
+    
     return(
         <div className={classes.form}>
             <div className={classes.formContainer}>
@@ -15,15 +27,16 @@ export default function Form(){
                     <label className={classes.formLabel} htmlFor="">Заявка</label>
                     <div className={classes.formContent}>
                         <div>
-                            <input placeholder='Имя' type="name" required className={classes.formItem}/>
+                            <input placeholder='Имя' onChange={changeName} value={name} type="name" required className={classes.formItem}/>
                             <input placeholder='Телефон' type="tel" required className={classes.formItem}/>
                             <input placeholder='E-mail' type="email" required className={classes.formItem}/>
-                            <textarea placeholder='Сообщение' type="text" required className={classes.formItem} id={classes.textareaItem}/>
+                            <input placeholder='Сообщение' type="text" className={classes.formItem} id={classes.textareaItem}/>
                         </div>
                         <div className={classes.submitContainer}>
                             <input type="submit" name='submit' className={classes.submitBtn}/>
                         </div>
                     </div>
+
                 </form>
             </div>
         </div>
