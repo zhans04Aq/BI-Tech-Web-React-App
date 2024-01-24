@@ -1,248 +1,138 @@
 .footer{
-    width: 100%;
-    height: 66.2%;
-    background-image: url('../../assets//img/footer_img.png');
-    background-repeat: no-repeat;
+    width: 124.6%;
+    height: 100%;
+    position: relative;
+    right: 13%;
+    background-image: url(../../assets/img/footer_img.png);
     background-size: cover;
-    position: absolute;
-    left: 0;
-    margin-top: 35%;
-    .mobileFooterContainer{
-        display: none;
-    }
-    .footerConatiner{
+    background-repeat: no-repeat;
+    margin-top: 10%;
+    border-radius: 20px 20px 0 0;
+    .footerContainer{
         width: 100%;
         height: 100%;
+        display: flex;
         padding: 5%;
         box-sizing: border-box;
-        display: flex;
-        justify-content: space-between;
         .leftContent{
-            width: 70%;
+            width: 45%;
             height: 100%;
             display: flex;
             flex-direction: column;
+            align-items: center;
+
             img{
-                width: 450px;
-                height: 100px;
+                padding: 5%;
+                box-sizing: border-box;
+                width: 60%;
             }
+
             p{
-                font-size: 23px;
                 color: white;
-                width: 50%;
+                font-size: calc(15px + 8 * (100vw / 1920));
                 text-align: start;
+                width: 50%;
 
                 span{
                     color: #828282;
-                    font-size: 15px;
+                    font-size: calc(8px + 7 * ( 100vw / 1920));
                 }
             }
 
             div{
                 display: flex;
-                flex-direction: row;
+                justify-content: center;
                 align-items: center;
+                width: 100%;
                 gap: 1%;
                 p{
-                    
-                    font-size: 20px;
+                    font-size: calc(15px + 5 * (100vw / 1920));
                 }
 
                 img{
-                    width: 13px;
-                    height: 13px;
+                    padding: 0;
+                    width: 2%;
                 }
             }
         }
 
         .rightContent{
-            width: 100%;
-            height: 100%;
-            align-self: center;
+            width: 55%;
             display: flex;
             justify-content: space-between;
-            gap: 7%;
-            h1{
-                color: white;
-                font-size: 35px;
-                letter-spacing: 3px;
-            }
+            color: white;
+
             .contacts{
-                width: 40%;
+                width: 50%;
                 display: flex;
                 flex-direction: column;
 
-                div{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 15%;
-                    img{
-                        width: 38px;
-                        height: 38px;
-                    }
-
-                    p{
-                        font-size: 23px;
-                        color: white;
-                    }
+                gap: 5%;
+                h1{
+                    font-size: calc(20px + 15 * (100vw / 1920));
                 }
-            }
-            
-            .payment{
-                width: 50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
                 div{
                     width: 100%;
-                    height: 60%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-around;
-                    align-items: center;
-                    gap: 15%;
-                    halyk{
-                        width: 160px;
-                        height: 55px;
-                    }
-
-                    kaspi{
-                        width: 215px;
-                        height: 55px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width:1440px) {
-    .footer{
-        .footerConatiner{
-            .leftContent{
-                img{
-                    width: 310px;
-                }
-
-                p{
-                    font-size: 18px;
-                    span{
-                        font-size: 13px;
-                    }
-                }
-
-            }
-
-            .rightContent{
-                h1{
-                    font-size: 29px;
-
-                }
-
-                .contacts{
-                    div{
-                        p{
-                            font-size: 19px;
-                        }    
-                    }
-
-                }
-
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .footer{
-        height: 100vh;
-        background-image: url('../../assets/mobile_img/img/footer_mobile.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        margin-top: 50%;
-        .footerConatiner{
-            display: none;
-        }
-
-        .mobileFooterContainer{
-            display: block;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            padding: 6%;
-            box-sizing: border-box;
-
-            img{
-                width: 305px;
-                height: 77px;
-            }
-
-            p{
-                font-size: 15px;
-                color: white;
-            }
-
-            .footerContacts{
-                width: 100%;
-
-                h6{
-                    color: white;
-                    font-size: 20px;
-                    font-weight: 600;
-                }
-                div{
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     gap: 5%;
                     img{
-                        width: 19px;
-                        height: 19px;
+                        width: 6%;
+                    }   
+
+                    p{
+                        font-size: calc(18px + 5 * (100vw / 1920));
                     }
                 }
             }
 
             .payment{
-                width: 100%;
+                width: 50%;
                 display: flex;
-                justify-content: center;
+                flex-direction: column;
+                justify-content: flex-start;
                 align-items: center;
-                gap: 5%;
-                .kaspi{
-                    width: 168px;
-                    height: 44px;
-                }
-
-                .halyk{
-                    width: 122px;
-                    height: 44px;
-                }
-            }
-
-            .copyrightSection{
+                flex-wrap: wrap;
+                gap: 10%;
                 img{
-                    width: 13px;
-                    height: 13px;
-
-                }
-
-                
-                h6{
-                    font-size: 15px;
-                    color: white;
-                }
-
-                p{
-                    color: #828282;
-                    font-size: 8px;
+                    width: 40%;
                 }
             }
         }
+    }
+}
 
-        // .footer
+@media only screen and (max-width:1440px) {
+    .footer{
+        .footerContainer{
+            .leftContent{
+                p{
+                    font-size: calc(15px + (8 + 7 * .7) * ((100vw - 430px) / 1920));
+                    span{
+                        font-size: calc(8px + (7 + 7 * .7) * ( (100vw - 430px) / 1920));
+                    }
+                }
+
+                div{
+                    p{
+                        font-size: calc(15px + (5 + 5 * .7) * ((100vw - 430px) / 1920));
+                    }
+                }
+            }
+
+            .rightContent{
+                .contacts{
+                    h1{
+                        font-size: calc(20px + (15 + 15 * .7) * ((100vw - 430px) / 1920));
+                    }
+                    div{
+                        p{
+                            font-size: calc(18px + (5 + 5 * .7) * ((100vw - 430px) / 1920));
+                        }
+                    }
+                }
+            }
+        }
     }
 }

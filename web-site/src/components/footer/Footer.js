@@ -15,31 +15,7 @@ import halykBank from '../../assets/icon/halyk_bank_logo.png'
 export const Footer = () => {
     return(
         <div className={styles.footer}>
-            <div className={styles.mobileFooterContainer}>
-                <img src={logo} alt="" />
-                <p>Ваш надежный партнер в мире веб-разработки! Мы – энергичная и творческая команда профессионалов, специализирующихся на создании современных и инновационных веб-решений.</p>
-                <div className={styles.footerContacts}>
-                    <h6>Наши контакты</h6>
-                    <div>
-                        <img src={whIcon} alt="" />
-                        <p>+7 (747) 960 41-80</p>
-                    </div>
-                    <div>
-                        <img src={tgIcon} alt="" />
-                        <p>+7 (747) 960 41-80</p>
-                    </div>
-                </div>
-                <div className={styles.payment}>
-                    <img src={halykBank} alt="" className={styles.halyk}/>
-                    <img src={kaspiImg} alt=""  className={styles.kaspi}/>
-                </div>
-                <div className={styles.copyrightSection}>
-                    <img src={copyrightIcon} alt="" />
-                    <h6>2023-2024 BI-TECH. All rights reserved.</h6>
-                    <p>Designed by Sultan Mecheyev</p>
-                </div>
-            </div>
-            <div className={styles.footerConatiner}>
+            <div className={styles.footerContainer}>
                 <div className={styles.leftContent}>
                     <img src={logo} alt="" />
                     <p>Ваш надежный партнер в мире веб-разработки! Мы – энергичная и творческая команда профессионалов, специализирующихся на создании современных и инновационных веб-решений.
@@ -63,10 +39,8 @@ export const Footer = () => {
                         </div>
                     </div>
                     <div className={styles.payment}>
-                        <div>
                             <img src={halykBank} alt="" id={styles.halyk}/>
                             <img src={kaspiImg} alt="" id={styles.kaspi}/>
-                        </div>
                     </div>
                 </div>
             </div>
