@@ -42,17 +42,9 @@
             max-height: 75vh;
             background-repeat: no-repeat;
             background-size: 100%;
-            background-image: url(../../assets/img/portofolio_example_bg.png);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0 auto;
-            img{
-                position: relative;
-                width: 85%;
-                height: 100%;
-                z-index: 999;
-            }
+            background-image: url(../../../../assets/img/portofolio_example_bg.png);
+            padding: 5%;
+            box-sizing: border-box;
         }
 
 
