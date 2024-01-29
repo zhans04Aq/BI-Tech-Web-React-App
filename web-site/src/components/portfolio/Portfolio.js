@@ -7,11 +7,11 @@ import classes from './portfolio.module.scss'
 
 import miniLogo from '../../assets/icon/mini_logo.png'
 import arrowDown from '../../assets/icon/arrow_down.png'
-import portfolioExample from '../../assets/img/showcase_1.png'
-import arrowLeft from '../../assets/icon/left-arrow.png'
-import arrowRight from '../../assets/icon/right-arrow.png'
-import mobileportfolioExample from '../../assets/mobile_img/img/App_Showcase.png'
-import PortfolioSlider from "../test/portofolio-test-component/PortofolioSlider";
+// import portfolioExample from '../../assets/img/showcase_1.png'
+// import arrowLeft from '../../assets/icon/left-arrow.png'
+// import arrowRight from '../../assets/icon/right-arrow.png'
+// import mobileportfolioExample from '../../assets/mobile_img/img/App_Showcase.png'
+import PortfolioSlider from "./portfolioSlider/PortofolioSlider";
 // import img
 
 export default function Portfolio(){
@@ -22,8 +22,9 @@ export default function Portfolio(){
                 <p>ПОРТФОЛИО</p>
                 <div>
                     <h1>Наши Работы</h1>
+                    <img src={arrowDown} alt="arrow down" />
                 </div>
-            </div>  
+            </div>
             <div className={classes.portfolioContainer}>
                 <div className={classes.sliderBg}>
                     <PortfolioSlider/>

@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import styles from './portifolioSlider.module.scss'
 
-import showcaseItem1 from '../../../assets/img/showcase_1.png' 
+import showcaseItem1 from '../../../assets/img/showcase_2.png' 
 import showcaseItem2 from '../../../assets/img/showcase_2.png' 
 import showcaseItem3 from '../../../assets/img/showcase_3.png' 
 import showcaseItem4 from '../../../assets/img/showcase_4.png' 
