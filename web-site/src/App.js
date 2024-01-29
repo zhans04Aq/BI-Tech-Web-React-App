@@ -21,7 +21,10 @@ function App() {
         <Portfolio/>
         <Team/>
         <Review/>
-        <Footer/>
+        <div className='footerComp'>
+          <Footer/>
+        </div>
+        
       </div>
     </div>
   );

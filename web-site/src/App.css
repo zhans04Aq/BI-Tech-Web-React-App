@@ -10,8 +10,14 @@
 
 .Container{
   margin: 0 auto;
+  width: 90%;
   max-width: 1600px;
   max-height: 1280px;
   padding: 3%;
   box-sizing: border-box;
+}
+
+
+.footerComp{
+
 }
