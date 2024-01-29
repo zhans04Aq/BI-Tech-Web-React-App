@@ -26,8 +26,8 @@ export default function Form(){
 
  
     
-    const sendMail = (event) =>{
-        event.preventDefault()
+    const sendMail = () =>{
+
         console.log('email send')
         const config = {
             Username: 'beka.ibrashev@gmail.com',
@@ -56,10 +56,7 @@ export default function Form(){
         }
     }
 
-    const sendMai = (event) =>{
-        event.preventDefault()
-        console.log('sss')
-    }
+
     return(
         <div className={classes.form}>
             <div className={classes.formContainer}>
