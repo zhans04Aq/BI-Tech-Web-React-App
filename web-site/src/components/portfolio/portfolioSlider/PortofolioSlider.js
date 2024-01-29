@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
-import styles from './portifolioSlider.module.scss'
+import styles from '../portfolio.module.scss'
 
 import showcaseItem1 from '../../../assets/img/showcase_1.png' 
 import showcaseItem2 from '../../../assets/img/showcase_2.png' 
@@ -34,11 +34,11 @@ export default function PortfolioSlider(){
                         <img src={item} alt="" className={styles.slider_item} />
                     </div>
                 ))}
-                <div className={styles.dot_container}>
-                {[0, 1, 2, 3].map((index) => (
-                    <span key={index} className={`${styles.dot} ${index === activeIndex ? styles.active_dot : ''}`} onClick={() => goToSlide(index)}></span>
-                ))}
-            </div>
+                    <div className={styles.dot_container}>
+                        {[0, 1, 2, 3].map((index) => (
+                            <span key={index} className={`${styles.dot} ${index === activeIndex ? styles.active_dot : ''}`} onClick={() => goToSlide(index)}></span>
+                        ))}
+                    </div>
                 <a className={styles.prev} onClick={prevSlide}>
                     <img src={arrowLeft} alt="" />
                 </a>

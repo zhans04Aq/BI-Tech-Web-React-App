@@ -8,7 +8,7 @@ import styles from './portfolio.module.scss'
 
 import miniLogo from '../../assets/icon/mini_logo.png'
 
-import showcaseItem1 from '../../assets/img/showcase_2.png' 
+import showcaseItem1 from '../../assets/img/showcase_1.png' 
 import showcaseItem2 from '../../assets/img/showcase_2.png' 
 import showcaseItem3 from '../../assets/img/showcase_3.png' 
 import showcaseItem4 from '../../assets/img/showcase_4.png' 
@@ -47,15 +47,11 @@ export default function Portfolio(){
                 <img src={miniLogo} alt="logo" />
                 <p>ПОРТФОЛИО</p>
                 <div>
-                    <a className={styles.prev} onClick={prevSlide}>
-                        <img src={arrowLeft} alt="" />
-                    </a>
+
 
                     <h1>Наши Работы</h1>
             
-                    <a className={styles.next} onClick={nextSlide}>
-                        <img src={arrowRight} alt="" />
-                    </a>
+
                 </div>
             </div>
 
@@ -64,11 +60,17 @@ export default function Portfolio(){
                     <div className={styles.slider}>
                         
                         <div className={styles.slider_container}>
+                            <a className={styles.prev} onClick={prevSlide}>
+                                <img src={arrowLeft} alt="" />
+                            </a>
                             {[showcaseItem1, showcaseItem2, showcaseItem3, showcaseItem4].map((item, index) => (
                             <div key={index} className={`${styles.mySlides} ${styles.fade} ${index === activeIndex ? styles.active_slide : styles.non_active_slide}`}>
                                 <img src={item} alt="" className={styles.slider_item} />
                             </div>
                             ))}
+                            <a className={styles.next} onClick={nextSlide}>
+                                <img src={arrowRight} alt="" />
+                            </a>
                     
                             {/* <div className={styles.dot_container}>
                                 {[0, 1, 2, 3].map((index) => (

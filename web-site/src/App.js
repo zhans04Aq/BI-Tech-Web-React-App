@@ -21,16 +21,9 @@ function App() {
         <Portfolio/>
         <Team/>
         <Review/>
-<<<<<<< HEAD
       </div>
       <div className="footer">
         <Footer/>
-=======
-        <div className='footerComp'>
-          <Footer/>
-        </div>
-        
->>>>>>> 0bc0fdc73c8c78fb836f5991176adc56ec2a2256
       </div>
     </div>
   );
