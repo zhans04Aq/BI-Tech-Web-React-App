@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 
 import classes from './services.module.scss'
@@ -36,13 +37,12 @@ const Services = () =>{
                         <p>Откройте для своего бизнеса новые возможности с нашей услугой веб-сайта. Мы создаем уникальные и функциональные онлайн-платформы, подчеркивающие ваш бренд. </p>
                     </div>
                     <div className={classes.serviceItem}>
-                        <img src={tgBotIcon} alt="" className="" />
+                        <img src={tgBotIcon} alt="" className="" />s
                         <h1>Телеграм бот</h1>
                         <p>Мы разрабатываем интеллектуальных помощников, обеспечивающих моментальный и персонализированный контакт с вашими клиентами.</p>
                     </div>
                 </div> 
             </div>   
-            
         </div>
     )
 }

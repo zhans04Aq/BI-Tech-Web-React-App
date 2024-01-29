@@ -19,10 +19,9 @@ export const Review = () => {
         <div className={styles.review}>
             <div className={styles.componentTitle}>
                 <img src={miniLogo} alt="logo" />
-                <p>ПОРТФОЛИО</p>
+                <p>что люди говорят про нас?</p>
                 <div>
-                    <h1>Наши Работы</h1>
-                    <img src={arrowDown} alt="arrow down" />
+                    <h1>Отзывы</h1>
                 </div>
             </div>
             <div className={styles.reviewContainer}>

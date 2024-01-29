@@ -21,6 +21,8 @@ function App() {
         <Portfolio/>
         <Team/>
         <Review/>
+      </div>
+      <div className="footer">
         <Footer/>
       </div>
     </div>

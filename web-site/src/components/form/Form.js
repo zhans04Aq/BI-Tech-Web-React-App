@@ -71,7 +71,7 @@ export default function Form(){
                             <div>
                             
                                 <input placeholder='Имя' onChange={changeName} value={name} type="text" required className={classes.formItem}/>
-                                <input placeholder='Телефон' onChange={changeNumber} value={number} type="number" required className={classes.formItem}/>
+                                <input placeholder='Телефон' onChange={changeNumber} value={number} type="tel" required className={classes.formItem}/>
                                 <input placeholder='E-mail' onChange={changeEmail} value={email} type="email" required className={classes.formItem}/>
                                 <input placeholder='Сообщение' onChange={changeMessage} value={message} type="text" className={classes.formItem} id={classes.textareaItem}/>
                            
