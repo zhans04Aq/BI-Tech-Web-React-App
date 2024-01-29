@@ -42,6 +42,7 @@ export default function Portfolio(){
 
     return(
         <div className={classes.portfolio}>
+
             <div className={classes.componentTitle}>
                 <img src={miniLogo} alt="logo" />
                 <p>ПОРТФОЛИО</p>
@@ -57,31 +58,26 @@ export default function Portfolio(){
                     </a>
                 </div>
             </div>
+
             <div className={classes.portfolioContainer}>
                 <div className={classes.sliderBg}>
-                
-
-
-                <div className={styles.slider}>
-                    <div className={styles.slider_container}>
-                        {[showcaseItem1, showcaseItem2, showcaseItem3, showcaseItem4].map((item, index) => (
-                    <div key={index} className={`${styles.mySlides} ${styles.fade} ${index === activeIndex ? styles.active_slide : styles.non_active_slide}`}>
-                        <div className={styles.slide_num}>{index + 1}/4</div>
-                        <img src={item} alt="" className={styles.slider_item} />
-                    </div>
-                ))}
-                <div className={styles.dot_container}>
-                    {[0, 1, 2, 3].map((index) => (
-                        <span key={index} className={`${styles.dot} ${index === activeIndex ? styles.active_dot : ''}`} onClick={() => goToSlide(index)}></span>
-                    ))}
-                </div>
-            
-
-            </div>
-        </div>
-    
-
+                    <div className={styles.slider}>
+                        
+                        <div className={styles.slider_container}>
+                            {[showcaseItem1, showcaseItem2, showcaseItem3, showcaseItem4].map((item, index) => (
+                            <div key={index} className={`${styles.mySlides} ${styles.fade} ${index === activeIndex ? styles.active_slide : styles.non_active_slide}`}>
+                                <img src={item} alt="" className={styles.slider_item} />
+                            </div>
+                            ))}
                     
+                            {/* <div className={styles.dot_container}>
+                                {[0, 1, 2, 3].map((index) => (
+                                    <span key={index} className={`${styles.dot} ${index === activeIndex ? styles.active_dot : ''}`} onClick={() => goToSlide(index)}></span>
+                                ))}
+                            </div> */}
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
