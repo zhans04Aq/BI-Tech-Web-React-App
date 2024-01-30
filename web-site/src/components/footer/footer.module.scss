@@ -71,7 +71,7 @@
                     a{
                         text-decoration: none;
                         color: white;
-                        width: 50%;
+                        width: 80%;
                         margin: 0 0 0 0;
                         img{
                             width: 20%;
@@ -134,8 +134,10 @@
                         font-size: calc(20px + (15 + 15 * .7) * ((100vw - 430px) / 1920));
                     }
                     div{
-                        p{
-                            font-size: calc(18px + (5 + 5 * .7) * ((100vw - 430px) / 1920));
+                        a{
+                            p{
+                                font-size: calc(18px + (5 + 5 * .7) * ((100vw - 430px) / 1920));
+                            }
                         }
                     }
                 }
