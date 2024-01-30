@@ -21,7 +21,7 @@ function App() {
       <a className='whatsapp-link' href="https://wa.me/77774345295"><img className="whatsapp-icon" src={whIcon} alt="" /></a>
       <div className='Container'>
         <Header/>
-        {/* <Form/> */}
+        <Form/>
         <Services/>
         <Portfolio/>
         {/* <Team/> */}
