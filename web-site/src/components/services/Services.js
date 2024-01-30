@@ -10,8 +10,14 @@ import graphEl from '../../assets/img/Graphic_Elements3.png'
 import eShopLogo from '../../assets/icon/webcart_img.png'
 import netIcon from '../../assets/icon/net_icon.png'
 import tgBotIcon from '../../assets/icon/tg_icon.png'
-import landingIcon from '../../assets/mobile_img/icons/landing_icon.png'
-import uxuiIcon from '../../assets/mobile_img/icons/ux_ui.png'
+    //mobile img import
+    import mobileTgIcon from '../../assets/mobile_img/icons/tg_bot.svg' 
+    import mobileEShopIcon from '../../assets/mobile_img/icons/e-commerce.svg' 
+    import mobileLanding from '../../assets/mobile_img/icons/landing.svg' 
+    import mobileNetIcon from '../../assets/mobile_img/icons/web.svg' 
+    import mobileUiUxIcon from '../../assets/mobile_img/icons/ux-ui.svg' 
+    import mobileGraphEl from '../../assets/mobile_img/img/graphEl_services.svg'
+    //mobile img import 
 // import img
 const Services = () =>{
     return(
@@ -43,6 +49,33 @@ const Services = () =>{
                     </div>
                 </div> 
             </div>   
+            <div className={classes.mobileServiceContainer}>
+                <div className={classes.serviceItem}>
+                    <img src={mobileEShopIcon} alt="" className={classes.serviceLogo} />
+                    <h1>Интернет магазин</h1>
+                    <p>Улучшите свой бизнес с нашим интернет-магазином. Мы создаем стильные онлайн-платформы с удобным взаимодействием. От каталогов до платежей - доверьтесь нам свой успех.</p>
+                </div>
+                <div className={classes.serviceItem}>
+                    <img src={mobileNetIcon} alt="" className={classes.serviceLogo} />
+                    <h1>Телеграм бот</h1>
+                    <p>Откройте для своего бизнеса новые возможности с нашей услугой веб-сайта. Мы создаем уникальные и функциональные онлайн-платформы, подчеркивающие ваш бренд.   </p>
+                </div>
+                <div className={classes.serviceItem}>
+                    <img src={mobileTgIcon} alt="" className={classes.serviceLogo} />
+                    <h1>Телеграм бот</h1>
+                    <p>Мы разрабатываем интеллектуальных помощников, обеспечивающих моментальный и персонализированный контакт с вашими клиентами. </p>
+                </div>
+                <div className={classes.serviceItem}>
+                    <img src={mobileLanding} alt="" className={classes.serviceLogo} />
+                    <h1>Лендинг</h1>
+                    <p>Мы создаем привлекательные веб-страницы, фокусируя внимание на вашем предложении. Доверьтесь нам для привлечения и конвертации посетителей в клиентов. </p>
+                </div>
+                <div className={classes.serviceItem}>
+                    <img src={mobileUiUxIcon} alt="" className={classes.serviceLogo} />
+                    <h1>UX & UI Design</h1>
+                    <p>Мы создаем интуитивные и креативные интерфейсы, которые не только привлекают, но и обеспечивают выдающийся опыт взаимодействия. От удобства использования до стильного дизайна - доверьтесь нам, чтобы сделать ваш продукт незабвенным для пользователей. </p>
+                </div>
+            </div>
         </div>
     )
 }
