@@ -68,14 +68,29 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    gap: 5%;
-                    img{
-                        width: 6%;
-                    }   
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        width: 50%;
+                        margin: 0 0 0 0;
+                        img{
+                            width: 20%;
+                        }  
 
-                    p{
-                        font-size: calc(18px + 5 * (100vw / 1920));
+                        p{
+                            text-align: start;
+                            font-size: calc(18px + 5 * (100vw / 1920));
+                        }
                     }
+
+                    a:first-child{
+                        width: 20%;
+                        img{
+                            width: 50%;
+                        }
+                    }
+
+
                 }
             }
 

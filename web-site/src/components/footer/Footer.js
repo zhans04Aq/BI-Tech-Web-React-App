@@ -7,6 +7,7 @@ import logo from '../../assets/icon/logo.png'
 import copyrightIcon from '../../assets/icon/copyright_img.png'
 import whIcon from '../../assets/icon/contact_wh_icon.png'
 import tgIcon from '../../assets/icon/contacts_tg_icon.png'
+import igIcon from '../../assets/icon/instagram.png'
 import kaspiImg from '../../assets/icon/kaspi_bank_logo.png'
 import halykBank from '../../assets/icon/halyk_bank_logo.png'
 // import img
@@ -30,13 +31,18 @@ export const Footer = () => {
                     <div className={styles.contacts}>
                     <h1>Наши Контакты</h1>
                         <div>
-                            <img src={whIcon} alt="" />
-                            <p>+7 (747) 960 41-80</p>
+                            <a href="https://wa.me/77774345295"><img src={whIcon} alt="" /></a>
+                            <a href="https://wa.me/77774345295"><p>+7 (777) 434 52-95</p></a>
                         </div>
                         <div>
-                            <img src={tgIcon} alt="" />
-                            <p>+7 (747) 960 41-80</p>
+                            <a href="https://t.me/bekarys_k"><img src={tgIcon} alt="" /></a>
+                            <a href="https://t.me/bekarys_k"><p>+7 (777) 434 52-95</p></a>
                         </div>
+                        <div>
+                            <a href="https://www.instagram.com/bi.tech.team?igsh=NTYzOWQzNmJjMA=="><img src={igIcon} alt="" /></a>
+                            <a href="https://www.instagram.com/bi.tech.team?igsh=NTYzOWQzNmJjMA=="><p>@bi.tech.team</p></a>
+                        </div>
+
                     </div>
                     <div className={styles.payment}>
                             <img src={halykBank} alt="" id={styles.halyk}/>
