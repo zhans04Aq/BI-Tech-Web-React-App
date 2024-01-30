@@ -28,4 +28,15 @@
   margin-top: 10%;
 }
 
+.whatsapp-link{
+  position: absolute;
+  right: 10%;
+  z-index: 999;
+  top: 90%;
+}
 
+.whatsapp-icon{
+  width: 3%;
+  position: fixed;
+  
+}
