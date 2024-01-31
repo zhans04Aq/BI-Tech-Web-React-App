@@ -1,7 +1,17 @@
+
+.img {
+    width: 70%; /* Убедитесь, что все изображения занимают 100% ширины слайда */
+    height: auto; /* Сохраняйте соотношение сторон */
+}
+
 .services{
     width: 100%;
     height: 100%;
     margin-top: 5%;
+
+    #hide{
+        display: none;
+    }
 
     .componentTitle{
         img{
@@ -37,7 +47,7 @@
     .servicesContainer{
         width: 100%;
         height: 100%;
-        margin-top: 5%;
+        margin-top: 1%;
         .serviceList{
             width: 100%;
             min-height: 100vh;
