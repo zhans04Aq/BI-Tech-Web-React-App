@@ -44,113 +44,79 @@
             padding: 5%;
             box-sizing: border-box;
             margin: 0 auto;
-        }
 
+            
+        .slider{
+        width: 100%;
+        height: 100%;
 
-        .sliderArrows{
-            margin-top: 15%;
+        .slider_container{
             width: 100%;
+            position: relative;
+            margin: auto;
             display: flex;
-            justify-content: center;
             align-items: center;
-            gap: 5%;
-            img{
-                width: 113%;
-            }
-        }
-    }
-}
-
-
-.slider{
-    width: 100%;
-    height: 100%;
-
-    .slider_container{
-        max-width: 1600px;
-        position: relative;
-        margin: auto;
-        display: flex;
-        align-items: center;
-        .mySlides{
-            width: 100%;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center ;
-            flex-direction: column-reverse;
-            img{
-                width: 80%;
-            }
-
-            .slide_num{
-                padding: 8px 12px;
-                box-sizing: border-box;
-                color: white;
-                font-size: 20px;
-            }
-        }
-
-        .prev, .next{
-            cursor: pointer;
-            transition: all 131s ease;
-            img{
-                
+            .mySlides{
                 width: 100%;
-                margin: 10%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center ;
+                flex-direction: column-reverse;
+                img{
+                    width: 80%;
+                }
+
+                .slide_num{
+                    padding: 8px 12px;
+                    box-sizing: border-box;
+                    color: white;
+                    font-size: 20px;
+                }
             }
+
+            .prev, .next{
+                cursor: pointer;
+                transition: all 131s ease;
+                img{
+                    
+                    width: 100%;
+                    margin: 10%;
+                }
+            }
+
+            .fade{
+                -webkit-animation-name: fade;
+                -webkit-animation-duration: 1s;
+                animation-name: fade;
+                animation-duration: 1s;
+                transition: all 1s ease;
+            }
+
+            @keyframes fade {
+                from{opacity: .4;}
+                to{opacity: 1;}
+            }
+
+            @-webkit-keyframes fade {
+                from{opacity: .4;}
+                to{opacity: 1;}
+            }
+
+            .ative_slide{
+                display:block;
+            }
+
+            .non_active_slide{
+                display: none;
+            }
+
         }
-
-        .fade{
-            -webkit-animation-name: fade;
-            -webkit-animation-duration: 1s;
-            animation-name: fade;
-            animation-duration: 1s;
-            transition: all 1s ease;
         }
-
-        @keyframes fade {
-            from{opacity: .4;}
-            to{opacity: 1;}
         }
-
-        @-webkit-keyframes fade {
-            from{opacity: .4;}
-            to{opacity: 1;}
-        }
-
-        .ative_slide{
-            display:block;
-        }
-
-        .non_active_slide{
-            display: none;
-        }
-
-
-
-
-
-
-
-    
-    }
-
-    .dot{
-        cursor: pointer;
-        content: " ";
-        width: 13px;
-        height: 13px;
-        margin: 0 1%;
-        background-color: #bbb;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color .6s ease;
-    }
-
-    .active, .dot:hover{
-        background-color: #717171;
     }
 }
+
+
 
 @media only screen and (max-width:1440px) {
     .portfolio{
@@ -188,6 +154,41 @@
                 border-radius: 20px;
                 img{
                     width: 84%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .portfolio{
+        .portfolioContainer{
+            .sliderBg{
+                .slider{
+                    .slider_container{
+                        .mySlides{
+                            // width: 100%;
+                            img{
+                                width: 100%;
+                            }
+                        }
+
+                        
+                        .prev{
+                            margin-right: 2%;
+                        }
+
+                        .next{
+                            margin-left: 2%;
+                        }
+
+                        .prev, .next{
+                            img{
+                                
+                                width: 30%;
+                            }
+                        }
+                    }
                 }
             }
         }

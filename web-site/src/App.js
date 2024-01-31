@@ -24,11 +24,11 @@ function App() {
         <Form/>
         <Services/>
         <Portfolio/>
-        <Team/>
-        <Review/>
+        {/* <Team/> */}
+        {/* <Review/> */}
       </div>
       <div className="footer">
-        <Footer/>
+        {/* <Footer/> */}
       </div>
     </div>
   );
