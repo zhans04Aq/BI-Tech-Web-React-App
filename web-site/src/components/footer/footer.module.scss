@@ -1,4 +1,7 @@
 .footer{
+    .phonefooterContainer{
+        display: none;
+    }
     width: 100%;
     .footerContainer{
         width: 100%;
@@ -144,3 +147,148 @@
         }
     }
 }
+
+
+
+@media only screen and (max-width:768px){
+    
+    .footer{
+        width: 100%;
+        .footerContainer{
+            display: none;
+        }
+        .phonefooterContainer{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 5%;
+            flex-direction: column;
+            box-sizing: border-box;
+            .leftContent{
+                .contacts{
+                    display: flex;
+                    flex-direction: column;
+                    h1{
+                        font-size: 5vw;
+                    }
+                    div{
+                        img{
+                            width: 15px;
+                        }
+                        p{
+                            font-size: 2vw;
+                            width: 100%;
+                        }
+                    }
+                }
+                width: 90%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+    
+                img{
+                    padding: 5%;
+                    box-sizing: border-box;
+                    width: 80%;
+                }
+    
+                p{
+                    color: white;
+                    font-size: 3.6vw;
+                    line-height: 4vw; 
+                    text-align: center;
+                    width: 80%;
+    
+                    span{
+                        color: #828282;
+                        font-size: calc(8px + 7 * ( 100vw / 1920));
+                    }
+                }
+    
+                div{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    gap: 1%;
+                    p{
+                        font-size: calc(15px + 5 * (100vw / 1920));
+                    }
+    
+                    img{
+                        padding: 0;
+                        width: 2%;
+                    }
+                }
+            }
+    
+            .rightContent{
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                color: white;
+                p{
+                    font-size: 3vw;
+                }
+                .contacts{
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 6%;
+                    h1{
+                        text-align: start;
+                        font-size: calc(20px + 15 * (100vw / 1920));
+                    }
+                    div{
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        a{
+                            text-decoration: none;
+                            color: white;
+                            width: 100%;
+                            img{
+                                width: 20%;
+                            }  
+    
+                            p{
+                                text-align: start;
+                                font-size: calc(18px + 5 * (100vw / 1920));
+                            }
+                        }
+    
+                        a:first-child{
+                            width: 20%;
+                            img{
+                                width: 50%;
+                            }
+                        }
+    
+    
+                    }
+                }
+    
+                .payment{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    margin-bottom: 5%;
+                    margin-top: 5%;
+                    gap: 10%;
+                    img{
+                        width: 40%;
+                    }
+                 
+                }
+            }
+        }
+    }
+    
+} 

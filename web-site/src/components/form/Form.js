@@ -1,6 +1,7 @@
 import React from 'react'
 import classes from './form.module.scss'
 import { useState } from 'react'
+import otzyv from '../../assets/img/otzyv.svg'
 
 export default function Form(){
 
@@ -85,11 +86,10 @@ export default function Form(){
                 </form>
             </div>
             <div className={classes.formMobileContainer}>
-                <div className={classes.formText}>
-                    <h1>Оставьте свои контакты <br /> и проектные ожидания,  мы <br /> свяжемся с вами в кратчайшие <br />  сроки для  обсуждения <br /> идеального  веб-проекта.</h1>
-                    <p>Свяжемся с вами вкратчайшее время!</p>
-                </div>
-                <form onSubmit={sendMail}> 
+ 
+                <img src={otzyv} className={classes.imgReview}/>
+
+                <form className={classes.formSubmit} onSubmit={sendMail}> 
                     <label className={classes.formLabel} htmlFor="">Заявка</label>
                     <div className={classes.formContent}>
                         <div>

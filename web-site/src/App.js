@@ -12,23 +12,29 @@ import Footer  from './components/footer/Footer';
 
 // import components
 // import img
-import whIcon from './assets/icon/contact_wh_icon.png'
+import whatsapp from './assets/img/wh.png'
 // import img
 
 function App() {
   return (
     <div className="App">
-      <a className='whatsapp-link' href="https://wa.me/77774345295"><img className="whatsapp-icon" src={whIcon} alt="" /></a>
+      <a className='whatsapp-link' href="https://wa.me/77774345295"><img className="whatsapp-icon" src={whatsapp} alt="" /></a>
+      
       <div className='Container'>
         <Header/>
-        <Form/>
-        <Services/>
-        <Portfolio/>
-        {/* <Team/> */}
-        {/* <Review/> */}
+      
+        
+      </div>
+      <Form/>
+      <div className='Container'>
+      <Services/>
+      <Portfolio/>
+        
+        <Team/>
+        <Review/>
       </div>
       <div className="footer">
-        {/* <Footer/> */}
+          <Footer/>
       </div>
     </div>
   );

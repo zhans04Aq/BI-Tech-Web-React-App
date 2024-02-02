@@ -185,7 +185,8 @@
             justify-content: center;
             align-items: center;
             .logo{
-                width: 30%;
+                width: 70%;
+                margin-top: 15%;
             }
 
             .bigLogo{
@@ -194,9 +195,11 @@
 
             p{
                 text-align: center;
-                width: 70%;
-                font-size: calc(20px + (30 + 30 * 0.7) * ((100vw - 430px) / 1920));
+                width: 100%;
+                font-size: 4.4vw;
+                font-weight: 400;
                 color: white;
+                // font-family: ;
                 letter-spacing: 5px;
                 span{
                     color: #898989;

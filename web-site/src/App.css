@@ -17,6 +17,10 @@
   box-sizing: border-box;
 }
 
+h1{
+  color: white
+}
+
 
 .footer{
   width: 100%;
@@ -30,13 +34,13 @@
 
 .whatsapp-link{
   position: absolute;
-  right: 10%;
+  right: 8%;
   z-index: 999;
-  top: 90%;
+  top: 85%;
 }
 
 .whatsapp-icon{
-  width: 3%;
+  width: 5%;
   position: fixed;
 }
 

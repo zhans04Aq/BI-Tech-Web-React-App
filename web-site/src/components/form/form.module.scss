@@ -1,5 +1,5 @@
 .form{
-    width: 100%;
+    width: 90%;
     height: 100%;
     margin-top: 5%;
     .formContainer{
@@ -143,7 +143,7 @@ input:focus{
 // 1440px
 @media screen and (max-width:1540px){
     .form{
-        margin-top: 15%;
+        margin-top: 1%;
         .formContainer{
             .formText{
                 width: 50%;
@@ -162,6 +162,13 @@ input:focus{
 }
 
 @media only screen and (max-width:768px) {
+
+    .fromSubmit{
+        width: 80%;
+    }
+    .imgReview{
+        width: 100%;
+    }
     .form{
         width: 100%;
         height: 100%;
@@ -170,18 +177,24 @@ input:focus{
         }
 
         .formMobileContainer{
-            display: block;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
             width: 100%;
             height: 100%;
-            background-image: url('../../assets/mobile_img/img/mobile_form_bg.png');
+            // background-image: url('../../assets/mobile_img/img/mobile_form_bg.png');
+            // background-color: blue;
             background-size: 100% 100%;
             background-repeat: no-repeat;
-            padding: 5%;
-            border-radius: 80px 80px 20px 20px;
+            // padding: 5%;
+            border-radius: 4%;
             box-sizing: border-box;
             .formText{
                 h1{
                     font-size: 3vw;
+                    font-weight: 300;
                     color: white;
                 }
                 p{
@@ -191,13 +204,15 @@ input:focus{
             }
 
             form{
-                width: 100%;
+                width: 90%;
                 height: 100%;
-                border: 1px solid white;
+                border: 1px solid rgb(90, 90, 90);
                 display: flex;
                 flex-direction: column;
+                justify-content: end;
+                
                 border-radius: 20px;
-                background-color: rgba($color: #747474, $alpha: .5);  
+                background-color: rgba($color: #74747476, $alpha: .2);  
                 label{
                     width: 40%;
                     height: 100%;
@@ -226,7 +241,7 @@ input:focus{
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
-                        padding: 15%;
+                        padding: 5%;
                         box-sizing: border-box;
                         .formItem{
                             width: 90%;
@@ -262,13 +277,18 @@ input:focus{
                     width: 100%;
                     padding: 10%;
                     box-sizing: border-box;
+                    
                     .submitBtn{
-                        padding: 4%;
+                        padding: 5%;
                         box-sizing: border-box;
-                        width: 50%;
-                        background-color: #161B7D;
+                        width: 60%;
+                        // background-color: #161B7D;
+                        background: linear-gradient(to right, #2e2e3e,rgb(41, 13, 131));
                         border: none;
                         border-radius: 7px;
+                        font-size: 4vw;
+                        font-weight: 600;
+                        letter-spacing: 0.5vw;
                     }
                 }
             }

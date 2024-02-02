@@ -11,6 +11,8 @@ import webIcon from '../../assets/icon/net_icon.svg'
 import webCart from '../../assets/icon/webcart_img.svg'
 import tgIcon from '../../assets/icon/tg_icon.png'
 import graphEl from '../../assets/img/Graphic_Elements6.png'
+
+import feedback from '../../assets/img/feedback.svg'
 // import img
 
 
@@ -18,8 +20,8 @@ export const Review = () => {
     return(
         <div className={styles.review}>
             <div className={styles.componentTitle}>
-                <img src={miniLogo} alt="logo" />
-                <p>что люди говорят про нас?</p>
+                <img src={feedback} alt="logo" />
+
                 <div>
                     <h1>Отзывы</h1>
                 </div>

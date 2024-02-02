@@ -33,7 +33,7 @@ export default function Header(){
                         <div className={classes.statisticsContainer}>
                             <div>
                                 <p>
-                                    <span>100+</span>  <br />
+                                    <span>12+</span>  <br />
                                     проектов
                                 </p>
                             </div>
@@ -45,7 +45,7 @@ export default function Header(){
                             </div>
                             <div>
                                 <p>
-                                    <span>100+</span>  <br />
+                                    <span>100%</span>  <br />
                                     довольных клиентов
                                 </p>
                             </div>
@@ -68,7 +68,7 @@ export default function Header(){
                 <div className={classes.statistics}>
                     <div>
                         <p>
-                            <span>100+</span>  <br />
+                            <span>12+</span>  <br />
                             проектов
                         </p>
                     </div>
@@ -80,7 +80,7 @@ export default function Header(){
                     </div>
                     <div>
                         <p>
-                            <span>100+</span>  <br />
+                            <span>100%</span>  <br />
                             довольных клиентов
                         </p>
                     </div>

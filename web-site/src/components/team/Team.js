@@ -11,14 +11,16 @@ import sultanImg from '../../assets/img/sultek_img.png'
 import placeholderImg from '../../assets/img/profile_placeholder.png'
 import graphEl from '../../assets/img/Graphic_Elements5.png'
 // img import
+import team from '../../assets/img/team.svg'
 
 const Team = () =>{
     return(
         <div className={styles.team}>
             <div className={styles.componentTitle}>
-                <img src={miniLogo} alt="logo" />
-                <p>СОВОКУПНЫЙ СОСТАВ</p>
+                <img src={team} alt="logo" />
+            
                 <div>
+                    
                     <h1>Наша команда</h1>
                     <img src={arrowDown} alt="arrow down" />
                 </div>

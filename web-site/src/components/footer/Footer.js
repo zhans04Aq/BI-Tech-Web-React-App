@@ -50,6 +50,48 @@ export const Footer = () => {
                     </div>
                 </div>
             </div>
+
+
+
+
+            <div className={styles.phonefooterContainer}>
+                <div className={styles.leftContent}>
+                    <img src={logo} alt="" />
+                    <p>Ваш надежный партнер в мире веб-разработки! Мы – энергичная и творческая команда профессионалов, специализирующихся на создании современных и инновационных веб-решений.
+                    </p>
+                    <div className={styles.contacts}>
+                    <h1>Наши Контакты</h1>
+                        <div>
+                            <a href="https://wa.me/77774345295"><img src={whIcon} alt="" /></a>
+                            <a href="https://wa.me/77774345295"><p>+7 (777) 434 52-95</p></a>
+                        </div>
+                        <div>
+                            <a href="https://t.me/bekarys_k"><img src={tgIcon} alt="" /></a>
+                            <a href="https://t.me/bekarys_k"><p>+7 (777) 434 52-95</p></a>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/bi.tech.team?igsh=NTYzOWQzNmJjMA=="><img src={igIcon} alt="" /></a>
+                            <a href="https://www.instagram.com/bi.tech.team?igsh=NTYzOWQzNmJjMA=="><p>@bi.tech.team</p></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div className={styles.rightContent}>
+                    
+                    <div className={styles.payment}>
+                            <img src={halykBank} alt="" id={styles.halyk}/>
+                            <img src={kaspiImg} alt="" id={styles.kaspi}/>
+                    </div>
+                    <div>
+                        <img src={copyrightIcon} alt="copyright icon"/>
+                        <p>2023-2024 BI-TECH. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
         </div>
     )
 }

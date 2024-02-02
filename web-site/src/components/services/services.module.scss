@@ -1,4 +1,12 @@
 
+.weMake{
+    width: 40%;
+}
+
+.phone{
+    display: none;
+}
+
 .img {
     width: 70%; /* Убедитесь, что все изображения занимают 100% ширины слайда */
     height: auto; /* Сохраняйте соотношение сторон */
@@ -14,9 +22,6 @@
     }
 
     .componentTitle{
-        img{
-            width: 3%;
-        }
         p{
             -webkit-text-stroke-width: 1px;
             -webkit-text-stroke-color: white;
@@ -153,7 +158,31 @@
 }
 
 @media only screen and (max-width:768px) {
+    .weMake{
+        display: none;
+    }
+    h1{
+        color: white;
+        font-size: 10vw;
+    }
+    .phoneWeMake{
+        display: block;
+        width: 100%;
+    }
+    .laptop{
+        display: none;
+    }
+
+    .phone{
+        display: block;
+    }
     .services{
+        .weMake{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
         .servicesContainer{
             display: none;
         }
